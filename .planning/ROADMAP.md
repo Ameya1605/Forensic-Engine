@@ -1,0 +1,56 @@
+# Roadmap: Forensic Engine (PREE)
+
+## Milestone 1: Core Forensic Engine (V1.0)
+- [x] **Phase 1: Project Foundation & API Scaffold** (Status: Done)
+  - Set up FastAPI project structure with proper error handling
+  - Implement base ForensicEngine class with Gemini integration
+  - Create /analyze and /health endpoints
+  - Configure CORS, logging, and environment variables
+- [x] **Phase 2: Lexical Fingerprinting Module** (Status: Done)
+  - Implement LLM trope detection algorithms
+  - Build expanded database of common LLM markers (40+ tropes)
+  - Add model-specific bias scoring (GPT/Claude/Gemini/Llama)
+  - Add structural pattern detection
+- [x] **Phase 3: Structural Mapping & Parameter Estimation** (Status: Done)
+  - Analyze formatting constraints and sentence variance
+  - Implement heuristic-based temperature estimation
+  - Add lexical density and rhythmic monotony detection
+  - Post-processing enrichment pipeline
+- [x] **Phase 4: Prompt Reconstruction Engine** (Status: Done)
+  - Build prompt-reverse-engineering via Gemini LLM
+  - Integration with forensic scoring modules
+  - JSON response validation with Pydantic models
+- [x] **Phase 5: Premium Dashboard Implementation** (Status: Done)
+  - Build Next.js frontend with glassmorphism design
+  - Implement Radar chart visualization (Recharts)
+  - Model attribution badge display
+  - Responsive design (mobile/tablet/desktop)
+  - Error handling UI with retry capability
+- [ ] **Phase 6: Testing & Hardening** (Status: Planned)
+  - Unit tests for trope detection accuracy
+  - Integration tests for API endpoints
+  - E2E tests for the full analysis pipeline
+  - Rate limiting and input sanitization
+- [ ] **Phase 7: Deployment & Documentation** (Status: Planned)
+  - Complete Dockerfile for full-stack deployment
+  - API documentation with OpenAPI/Swagger
+  - User guide and README improvements
+  - CI/CD pipeline setup
+
+## Milestone 2: Multimodal Forensics (V2.0)
+- [x] **Phase 8: Image Forensics Backend** (Status: Done)
+  - Image forensic engine with Gemini Vision integration
+  - EXIF/PNG metadata extraction (pure Python, no Pillow)
+  - Pixel heuristic analysis (compression ratio, resolution checks)
+  - `/analyze/image` endpoint with magic-byte validation
+  - Model deprecation fallback (same pattern as text engine)
+- [x] **Phase 9: Image Forensics Frontend** (Status: Done)
+  - Drag-and-drop ImageDropZone component
+  - ImageForensicReport with verdict badges, confidence gauges, anomaly list
+  - Tab switcher (Text Analysis ↔ Image Analysis)
+  - Scan-line animation overlay during analysis
+  - All styles matching existing glassmorphism design system
+- [ ] **Phase 10: Multimodal Testing & Polish** (Status: Planned)
+  - Test image endpoint with AI-generated and real photos
+  - Responsive breakpoint verification for image UI
+  - Update README with image analysis documentation

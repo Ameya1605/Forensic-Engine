@@ -1,0 +1,67 @@
+# Trope Database for The Forensic Engine (PREE)
+# These are common words, phrases, and stylistic choices that are hallmarks of various LLMs.
+
+AI_HALLMARKS = {
+    "lexical_fingerprints": [
+        "delve",
+        "tapestry",
+        "testament",
+        "meticulous",
+        "crucial",
+        "comprehensive",
+        "underscore",
+        "notably",
+        "furthermore",
+        "moreover",
+        "in conclusion",
+        "lastly",
+        "at its core",
+        "landscape",
+        "foster",
+        "holistic",
+        "synergy",
+        "paradigm",
+        "seamless",
+        "transformative",
+        "evocative",
+        "resonate",
+        "embark",
+        "dive",
+        "unfold",
+        "realm",
+        "unveiling",
+        "multifaceted",
+        "integral",
+        "leveraging",
+        "navigating",
+        "pivotal",
+        "harness",
+        "robust",
+        "streamline",
+        "cutting-edge",
+        "spearhead",
+        "groundbreaking",
+        "underpinning",
+    ],
+    "structural_patterns": [
+        "Step-by-step numbering",
+        "Predictable three-part intro/body/conclusion",
+        "Excessive use of bolding for emphasis",
+        "Mirroring user input format exactly",
+        "Formal, slightly detached tone",
+        "Lack of slang or colloquialisms",
+        "Balanced sentence lengths (rhythmic monotony)",
+        "Bullet-point heavy formatting",
+        "Hedging language (may, might, could)",
+        "Excessive transitional phrases",
+    ],
+    "model_specific_bias": {
+        "gpt": ["delve", "comprehensive", "crucial", "testament", "meticulous", "tapestry"],
+        "claude": ["heart", "tapestry", "complex", "nuance", "genuinely", "straightforward"],
+        "gemini": ["unfold", "landscape", "explore", "realm", "navigating", "pivotal"],
+        "llama": ["robust", "leverage", "streamline", "cutting-edge"],
+    }
+}
+
+# Backward compatibility alias (old name had typo)
+AI_HALMARKS = AI_HALLMARKS
