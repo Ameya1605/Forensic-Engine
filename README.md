@@ -1,7 +1,5 @@
 # The Forensic Engine (PREE)
 
-![Forensic Engine Dashboard](https://lh3.googleusercontent.com/aida/ADBb0ugjvCevV_D-nlw8O_uC96QSstW1K0afnnCebIFqouljTB0f1P9yHzAaRrVGXBqGnEDlzj3uxGewZiJi6y-JX1CjgvLj-CYFimBPs6x32hMAr6-MUFzWp4acqdDuMOSq5ZJrRUnBAbYjFOrCn7Vf4lAkf5Vk-l4sE9BbskFQakdGgtaLjbzNLOF94mLNY6xJBu-EQwfc1IS2i2FwSfH_4Qnz6p7RdboTX1iRyvZ4s3LApuGBc8Fjt27qNNZw)
-
 **The Prompt Reverse Engineering Engine (PREE)** is an advanced, high-fidelity AI forensic analyzer. Designed with the precision of a cyber-intelligence platform, it specializes in detecting AI-generated text and imagery and meticulously reverse-engineering the exact prompts, system instructions, and technical parameters used to create them.
 
 ---
@@ -24,15 +22,6 @@ The Forensic Engine operates by deeply analyzing structural, lexical, visual, an
 
 ---
 
-## 💎 The "Obsidian Trace" Design System
-
-The frontend employs the custom-built **Obsidian Trace** design system, created to look like elite cyber-intelligence software:
-- **Luminescent Depth:** Replacing flat shadows with ambient, glowing refractions (`0 4px 40px rgba(0, 242, 255, 0.04)`).
-- **Heavy Glassmorphism:** Deep layers of blurred panes (`backdrop-filter: blur(20px)`) that float over an obsidian `#050505` base.
-- **No-Line Formatting:** Panels are delineated by 1px ghost borders and severe tonal transitions rather than thick SaaS styling.
-- **Neon Analytics:** Data is immediately highlighted in Neon Cyan (`Primary: #00f2ff`), Amber (`Warnings: #ffb700`), and Crimson (`Threats/AI Verdict: #c2002b`). 
-
----
 
 ## 🏗️ Architecture Stack
 
@@ -98,10 +87,4 @@ npm run dev
 **Frontend `web/.env.local`**
 - `NEXT_PUBLIC_API_URL` (Required in Prod): Location of the FastAPI backend.
 
----
 
-## ❗ Troubleshooting Git (Submodule Error)
-If you tried pushing your code and saw `modified: web (modified content)`, it means your `web` folder is acting as a sub-repository. To fix this so everything tracks under one repository:
-1. Delete the hidden `.git` folder inside the `web` directory.
-2. Run `git rm --cached web` from your root folder.
-3. Run `git add web` and commit!
